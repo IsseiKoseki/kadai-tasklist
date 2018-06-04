@@ -14,8 +14,7 @@ class AddDueImportantanceToTasksTable extends Migration
     public function up()
     {
         Schema::table('tasks', function (Blueprint $table) {
-            $table->string('importance',10);
-            $table->string('due',10);
+            
         });
     }
 
@@ -27,8 +26,7 @@ class AddDueImportantanceToTasksTable extends Migration
     public function down()
     {
         Schema::table('tasks', function (Blueprint $table) {
-           $table->dropColumn('status');
-           $table->dropColumn('due');
+           
         });
     }
 }
